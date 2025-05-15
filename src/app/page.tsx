@@ -25,6 +25,11 @@ export default function Index() {
           )}
         </Container>
         <Resume />
+        <Container>
+        <div className="mb-12 md:mb-24 rounded-md flex flex-col lg:flex-row items-center">
+          <p>Always open for a coffee chat in Paris ☕.</p>
+        </div>
+      </Container>
       </div>
     </main>
   );

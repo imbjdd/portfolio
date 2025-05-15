@@ -10,7 +10,7 @@ export default function Articles() {
     <main className="min-h-screen bg-white">
       <Container>
         <Header />
-        <div className="my-16 md:my-24">          
+        <div className="py-16 md:py-24">          
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
             All my writings
           </h1>
