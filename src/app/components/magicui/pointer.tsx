@@ -8,6 +8,7 @@ import {
   useMotionValue,
 } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import React from "react";
 
 interface PointerProps extends Omit<HTMLMotionProps<"div">, "ref"> {}
 
@@ -24,7 +25,7 @@ export function Pointer({
   style,
   children,
   ...props
-}: PointerProps): JSX.Element {
+}: PointerProps): React.ReactElement {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const [isActive, setIsActive] = useState<boolean>(false);
