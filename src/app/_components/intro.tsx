@@ -136,7 +136,7 @@ export function Intro() {
   }, []);
 
   return (
-    <section className="md:min-h-[100vh] flex flex-col justify-center bg-white">
+    <section className="flex flex-col justify-center bg-white">
       <div className="max-w-7xl mx-auto w-full py-12 md:py-20">
         <div className="flex flex-col md:grid-cols-1 gap-2 md:gap-4">            
             {/* Fixed height container to prevent layout shifts */}
@@ -148,7 +148,12 @@ export function Intro() {
                 </h1>
               </div>
             </div>
-            
+
+            <h2 className="text-3xl md:text-2xl right-24 bottom-24 font-light tracking-tight text-black leading-tight">
+              <span className="font-base">Final-year</span> <span className="text-gray-400">Math BSc</span>
+              <br />& <span className="font-base">4 Hackathons</span> Prize Winner
+            </h2>
+
             <div className="flex flex-wrap gap-4">
               <Link 
                 href="/resume.pdf" 
@@ -166,24 +171,8 @@ export function Intro() {
                 </svg>
               </button>
             </div>
-            
-            {/* Phi SVG arrow below buttons */}
-            <div className="mt-8 ml-4 flex">
-              <Image 
-                src="/phi.svg" 
-                alt="Arrow" 
-                width={150} 
-                height={150} 
-                className=""
-              />
-            </div>
           </div>
       </div>
-            
-      <h2 className="text-3xl md:text-2xl md:absolute right-24 bottom-24 font-light tracking-tight text-black leading-tight">
-          <span className="font-base">Final-year</span> <span className="text-gray-400">Math BSc</span>
-          <br />& <span className="font-base">4 Hackathons</span> Prize Winner
-        </h2>
 
       <style jsx>{`
         .title-wrapper {
