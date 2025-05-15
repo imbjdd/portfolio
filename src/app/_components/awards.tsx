@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "motion/react"
+import { Pointer } from "@/app/components/magicui/pointer";
 
 const awardsData = [
   {
@@ -84,6 +85,7 @@ export function Awards() {
                   height={506} 
                   alt={award.imageAlt}
                 />
+                <Pointer className="fill-pink-500" />
               </div>
               <h3 className="text-xl font-light p-2 rounded-md text-black transition-colors duration-300 mb-2">
                 {award.title}
