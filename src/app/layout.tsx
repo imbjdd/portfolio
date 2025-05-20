@@ -52,6 +52,7 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="f8398f84-cfa9-447b-8915-bf8e758ef740"></script>
       </head>
       <body
         className={cn(inter.className, "bg-white")}
