@@ -151,7 +151,7 @@ export function Intro() {
 
             <h2 className="text-3xl md:text-2xl right-24 bottom-24 font-light tracking-tight text-black leading-tight">
               <span className="font-base">Final-year</span> <span className="text-gray-400">Math BSc</span>
-              <br />& <span className="font-base">4 Hackathons</span> Prize Winner
+              <br />& <span className="font-base">6 Hackathons</span> Prize Winner
             </h2>
 
             <div className="flex flex-wrap gap-4">

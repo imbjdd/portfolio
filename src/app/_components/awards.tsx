@@ -22,7 +22,23 @@ const awardsData = [
     fullWidth: false
   },
   {
-    image: '/coc.jpg',
+    image: '/amsterdam.jpeg',
+    imageAlt: 'Legal Frontier Hackathon award',
+    title: 'Legal Frontier Hackathon - 2nd place',
+    description: 'Amsterdam — 2025',
+    delay: 0.2,
+    fullWidth: false
+  },
+  {
+    image: '/www.png',
+    imageAlt: 'World Wild Web Hackathon award',
+    title: 'World Wild Web - 3rd place',
+    description: 'Paris — 2025',
+    delay: 0.2,
+    fullWidth: false
+  },
+  {
+    image: '/db3.png',
     imageAlt: 'ETHShangai award',
     title: 'DB3 - Building a decentralized application with DB3',
     description: 'ETHShangai — $300',
