@@ -61,6 +61,7 @@ import {
 } from "@/app/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { Dock, DockIcon } from "@/app/components/magicui/dock";
+import { usePathname } from "next/navigation";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -130,6 +131,7 @@ const DATA = {
 };
 
 function DockDemo() {
+  const pathname = usePathname();
   return (
     <div className="fixed bottom-8 z-50 left-0 right-0">
       <div className="flex flex-col items-center justify-center">
@@ -145,6 +147,7 @@ function DockDemo() {
                       className={cn(
                         buttonVariants({ variant: "ghost", size: "icon" }),
                         "size-12 rounded-full",
+                        pathname === item.href ? "text-orange-400" : ""
                       )}
                     >
                       <item.icon className="size-4" />

@@ -12,7 +12,7 @@ type Props = {
 export function MoreStories({ posts, hideTitle = false }: Props) {
   return (
     <section className="bg-white pb-24 md:pb-32">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {!hideTitle && (
           <motion.h2 
               initial={{ opacity: 0, y: 20 }}

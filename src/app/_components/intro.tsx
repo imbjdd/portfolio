@@ -136,13 +136,13 @@ export function Intro() {
   }, []);
 
   return (
-    <section className="flex flex-col justify-center bg-white">
-      <div className="max-w-7xl mx-auto w-full py-12 md:py-20">
+    <section className="flex flex-col justify-center">
+      <div className="max-w-5xl mx-auto w-full py-12 md:pb-20 md:pt-8">
         <div className="flex flex-col md:grid-cols-1 gap-2 md:gap-4">            
             {/* Fixed height container to prevent layout shifts */}
             <div className="title-wrapper h-64">
               <div className="gsap-title-container" ref={titleContainerRef}>
-                <h1 className="text-5xl md:text-8xl font-bold split">
+                <h1 className="text-5xl md:text-7xl font-light split">
                   <span className="word opacity-0">Salim</span>
                   <span className="word opacity-0">Boujaddi</span>
                 </h1>
@@ -150,8 +150,8 @@ export function Intro() {
             </div>
 
             <h2 className="text-3xl md:text-2xl right-24 bottom-24 font-light tracking-tight text-black leading-tight">
-              <span className="font-base">Final-year</span> <span className="text-gray-400">Math BSc</span>
-              <br />& <span className="font-base">7 Hackathons</span> Prize Winner
+              <span className="font-base">Software Engineer</span>
+              <br /><span className="font-bold text-orange-400">&</span> <span className="font-base">8 Hackathons</span> Prize Winner
             </h2>
 
             <div className="flex flex-wrap gap-4">

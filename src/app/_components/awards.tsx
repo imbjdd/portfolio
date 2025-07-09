@@ -73,8 +73,8 @@ const awardsData = [
 
 export function Awards() {
   return (
-    <section className="bg-white pb-24 md:pb-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+    <section className="pb-24 md:pb-32">
+      <div className="max-w-5xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -103,7 +103,7 @@ export function Awards() {
                 />
                 <Pointer className="fill-pink-500" />
               </div>
-              <h3 className="text-xl font-light p-2 rounded-md text-black transition-colors duration-300 mb-2">
+              <h3 className="text-xl font-light py-2 rounded-md text-black transition-colors duration-300 mb-2">
                 {award.title}
               </h3>
               <p className="text-md font-light text-gray-700 group-hover:text-black transition-colors duration-300">

@@ -11,7 +11,7 @@ export default function Index() {
   const morePosts = allPosts;
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-gradient-to-b from-orange-300 to-10% to-white">
       <Container>
         <Header />
         <Intro />
@@ -26,9 +26,6 @@ export default function Index() {
         </Container>
         <Resume />
         <Container>
-        <div className="mb-12 md:mb-24 rounded-md flex flex-col lg:flex-row items-center">
-          <p>Always open for a coffee chat in Paris ☕.</p>
-        </div>
       </Container>
       </div>
     </main>
