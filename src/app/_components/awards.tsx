@@ -11,7 +11,8 @@ const awardsData = [
     title: 'Gaia and Collab.Land - Most Viral Agent & Flow Best AI Agents for Consumers 3rd place',
     description: 'ETHGlobal Agents — $3,500',
     delay: 0.2,
-    fullWidth: false
+    fullWidth: false,
+    link: 'https://github.com/juSt-jeLLy/Clash-of-Clout'
   },
   {
     image: '/ddd.jpg',
@@ -19,7 +20,8 @@ const awardsData = [
     title: 'The Graph - Best Use of Subgraph 2nd place',
     description: 'ETHGlobal Brussels — $1,500',
     delay: 0.4,
-    fullWidth: false
+    fullWidth: false,
+    link: 'https://github.com/imbjdd/ethglobal-brussels'
   },
   {
     image: '/amsterdam.jpeg',
@@ -27,7 +29,8 @@ const awardsData = [
     title: 'Legal Frontier Hackathon - 2nd place',
     description: 'Amsterdam — 2025',
     delay: 0.2,
-    fullWidth: false
+    fullWidth: false,
+    link: 'https://github.com/imbjdd/alphavibe-compliance'
   },
   {
     image: '/www.png',
@@ -35,7 +38,8 @@ const awardsData = [
     title: 'World Wild Web - 3rd place',
     description: 'Paris — 2025',
     delay: 0.2,
-    fullWidth: false
+    fullWidth: false,
+    link: 'https://github.com/imbjdd/www-winner'
   },
   {
     image: '/db3.png',
@@ -43,7 +47,8 @@ const awardsData = [
     title: 'DB3 - Building a decentralized application with DB3',
     description: 'ETHShangai — $300',
     delay: 0.2,
-    fullWidth: false
+    fullWidth: false,
+    link: 'https://github.com/orgs/SoveiLive/repositories'
   },
   {
     image: '/privlend.jpg',
@@ -51,7 +56,8 @@ const awardsData = [
     title: 'Privlend',
     description: 'ETHGlobal Trifecta',
     delay: 0.4,
-    fullWidth: false
+    fullWidth: false,
+    link: 'https://github.com/imbjdd/privlend-front'
   },
   {
     image: '/climate.png',
@@ -59,7 +65,8 @@ const awardsData = [
     title: 'Climate Compass',
     description: 'ETHPrague 2024',
     delay: 0.2,
-    fullWidth: false
+    fullWidth: false,
+    link: 'https://github.com/orgs/Climate-Compass/repositories'
   },
   {
     image: '/clickandcollect.png',
@@ -67,7 +74,8 @@ const awardsData = [
     title: 'Click and Collect',
     description: 'Hackathon Campus Fund x Albert School x 42',
     delay: 0.4,
-    fullWidth: false
+    fullWidth: false,
+    link: 'https://github.com/imbjdd/marketplace'
   }
 ];
 
@@ -93,22 +101,24 @@ export function Awards() {
               transition={{ duration: 0.8, delay: award.delay }}
               className={`group ${award.fullWidth ? 'md:col-span-2 md:max-w-xl' : ''}`}
             >
-              <div className="overflow-hidden mb-6 aspect-[16/9]">
-                <Image 
-                  className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700 transform hover:scale-105 object-cover" 
-                  src={award.image} 
-                  width={900} 
-                  height={506} 
-                  alt={award.imageAlt}
-                />
-                <Pointer className="fill-pink-500" />
-              </div>
-              <h3 className="text-xl font-light py-2 rounded-md text-black transition-colors duration-300 mb-2">
-                {award.title}
-              </h3>
-              <p className="text-md font-light text-gray-700 group-hover:text-black transition-colors duration-300">
-                {award.description}
-              </p>
+              <a href={award.link} target="_blank" rel="noopener noreferrer" className="block">
+                <div className="overflow-hidden mb-6 aspect-[16/9]">
+                  <Image 
+                    className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700 transform hover:scale-105 object-cover" 
+                    src={award.image} 
+                    width={900} 
+                    height={506} 
+                    alt={award.imageAlt}
+                  />
+                  <Pointer className="fill-pink-500" />
+                </div>
+                <h3 className="text-xl font-light py-2 rounded-md text-black transition-colors duration-300 mb-2 hover:text-orange-600">
+                  {award.title}
+                </h3>
+                <p className="text-md font-light text-gray-700 group-hover:text-black transition-colors duration-300">
+                  {award.description}
+                </p>
+              </a>
             </motion.div>
           ))}
         </div>
