@@ -17,17 +17,15 @@ export default function Index() {
         <Intro />
       </Container>
       
-      <div id="content">
+      <Container>
         <Awards />
-        <Container>
+        <div className="flex flex-col gap-4">
           {morePosts.length > 0 && (
             <MoreStories posts={morePosts} />
           )}
-        </Container>
+        </div>
         <Resume />
-        <Container>
       </Container>
-      </div>
     </main>
   );
 }
