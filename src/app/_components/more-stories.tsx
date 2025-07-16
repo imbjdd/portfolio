@@ -12,7 +12,7 @@ type Props = {
 export function MoreStories({ posts, hideTitle = false }: Props) {
   return (
     <section className="bg-white pb-24 md:pb-32">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto w-full">
         {!hideTitle && (
           <motion.h2 
               initial={{ opacity: 0, y: 20 }}
@@ -24,9 +24,9 @@ export function MoreStories({ posts, hideTitle = false }: Props) {
           </motion.h2>
         )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+        <div className="grid grid-cols-1 gap-x-12 gap-y-16">
           {posts.map((post) => (
-            <Link href={`/posts/${post.slug}`} className="border border-dashed border-black p-[1rem] rounded-[10px]" key={post.slug}>
+            <Link href={`/posts/${post.slug}`} className="border w border-dashed border-black p-[1rem] rounded-[10px]" key={post.slug}>
               <PostPreview
                 title={post.title}
                 coverImage={post.coverImage}

@@ -137,7 +137,7 @@ export function Intro() {
 
   return (
     <section className="flex flex-col justify-center">
-      <div className="max-w-5xl mx-auto w-full py-12 md:pb-20 md:pt-8">
+      <div className="max-w-5xl mx-auto w-full pt-4 pb-12 md:pb-20 md:pt-8">
         <div className="flex flex-col md:grid-cols-1 gap-2 md:gap-4">            
             {/* Fixed height container to prevent layout shifts */}
             <div className="title-wrapper h-64">
