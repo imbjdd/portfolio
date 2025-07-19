@@ -81,7 +81,7 @@ const awardsData = [
 
 export function Awards() {
   return (
-    <section className="pb-24 md:pb-32">
+    <section className="pb-24 md:pb-32" id="content">
       <div className="max-w-5xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
