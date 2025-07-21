@@ -47,7 +47,7 @@ export default Header;
 
 "use client";
 
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, PencilIcon, Brain } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -68,6 +68,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
+  brain: (props: IconProps) => <Brain {...props} />,
   linkedin: (props: IconProps) => (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>LinkedIn</title>
@@ -113,6 +114,7 @@ const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/articles", icon: PencilIcon, label: "Blog" },
+    { href: "/experiences", icon: Brain, label: "Experiences" },
   ],
   contact: {
     social: {
