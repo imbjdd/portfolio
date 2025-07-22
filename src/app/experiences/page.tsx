@@ -20,7 +20,7 @@ export default function Articles() {
           <section className="mt-8 flex flex-col gap-4">
             <h2 id="AI" className="text-2xl font-semibold">AI</h2>
             <p>My first Experiences with AI were about AI safety. I read the <a className="text-orange-400" href="https://lesswrong.com">Lesswrong</a> blog extensively.</p>
-            <p>During the summer of 2024, I participated in a research project focused on government use of AI. The course was <a className="text-orange-400" href="https://www.example.com">AI SAFETY COLLAB GERMANY</a> organized by Bluedot Impact & CéSIA.</p>
+            <p>During the summer of 2024, I took part in the <a className="text-orange-400" href="https://bluedot.org/">AI Safety Collab Germany course</a> organized by Bluedot Impact & CéSIA.</p>
             <p>Then, I focused more on the technical aspects of AI, exploring various frameworks and tools to build AI models. I participated in several hackathons and workshops to deepen my understanding and skills.</p>
 
             <h3 className="font-semibold mt-8">ETHGlobal Online</h3>
