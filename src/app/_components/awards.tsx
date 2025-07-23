@@ -87,7 +87,7 @@ export function Awards() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl md:text-6xl font-light text-black mb-16 tracking-tight"
+          className="text-2xl md:text-2xl font-semibold text-black mb-16 tracking-tight"
         >
           Hackathon Projects
         </motion.h2>
@@ -110,7 +110,7 @@ export function Awards() {
                     height={506} 
                     alt={award.imageAlt}
                   />
-                  <Pointer className="fill-pink-500" />
+                  <Pointer className="fill-orange-400" />
                 </div>
                 <h3 className="text-xl font-light py-2 rounded-md text-black transition-colors duration-300 mb-2 hover:text-orange-600">
                   {award.title}

@@ -18,7 +18,7 @@ export function MoreStories({ posts, hideTitle = false }: Props) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-4xl md:text-6xl font-light text-black mb-16 tracking-tight"
+              className="text-2xl md:text-2xl font-semibold text-black mb-16 tracking-tight"
             >
             Articles
           </motion.h2>

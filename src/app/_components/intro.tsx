@@ -138,20 +138,33 @@ export function Intro() {
   return (
     <section className="flex flex-col justify-center">
       <div className="max-w-5xl mx-auto w-full pt-4 pb-12 md:pb-20 md:pt-8">
-        <div className="flex flex-col md:grid-cols-1 gap-2 md:gap-4">            
-            {/* Fixed height container to prevent layout shifts */}
-            <div className="title-wrapper h-64">
-              <div className="gsap-title-container" ref={titleContainerRef}>
-                <h1 className="text-5xl md:text-7xl font-light split">
-                  <span className="word opacity-0">Salim</span>
-                  <span className="word opacity-0">Boujaddi</span>
-                </h1>
-              </div>
-            </div>
-
+        <div className="flex flex-col md:grid-cols-1 gap-2 md:gap-4">          
+            <div className="p-2 px-6 bg-orange-400 font-semibold rounded-lg">
+              <p>/home/salim_boujaddi</p>
+            </div>  
+                <div className="mb-4">
+                  <pre style={{fontFamily: 'monospace', fontSize: '1rem', lineHeight: '1.1'}}>
+{`
+                        _
+                       | \\
+                       | |
+                       | |
+  |\\                   | |
+ /, ~\\                / /
+X     \`-.....-------./ /
+ ~-. ~  ~              |
+    \\             /    |
+     \\  /_     ___\\   /
+     | /\\ ~~~~~   \\ |
+     | | \\        || |
+     | |\\ \\       || )
+    (_/ (_/      ((_/ 
+`}
+                  </pre>
+                </div>
             <h2 className="text-3xl md:text-2xl right-24 bottom-24 font-light tracking-tight text-black leading-tight">
-              <span className="font-base">Software Engineer</span>
-              <br /><span className="font-bold text-orange-400">&</span> <span className="font-base">8 Hackathons</span> Prize Winner
+              <span className="font-bold">Hi, I'm <span className="text-orange-400">Salim</span>, a Software Engineer</span>
+              <br /><span className="">&</span> <span className="font-base">8 Hackathons</span> Prize Winner
             </h2>
 
             <div className="flex flex-wrap gap-4">

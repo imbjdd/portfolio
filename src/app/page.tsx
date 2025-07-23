@@ -11,7 +11,7 @@ export default function Index() {
   const morePosts = allPosts;
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-orange-300 to-10% to-white">
+    <main className="min-h-screen bg-white">
       <Container>
         <Header />
         <Intro />
@@ -24,7 +24,7 @@ export default function Index() {
             <MoreStories posts={morePosts} />
           )}
         </div>
-        <Resume />
+        {/* <Resume /> */}
       </Container>
     </main>
   );
