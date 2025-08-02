@@ -47,7 +47,7 @@ export default Header;
 
 "use client";
 
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon, Brain } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, PencilIcon, Brain, FolderOpen } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -135,6 +135,32 @@ const DATA = {
 function DockDemo() {
   const pathname = usePathname();
   return (
+    <div className="px-4 xl:px-96 w-full">
+      <div className="flex gap-12 py-4">
+            {DATA.navbar.map((item, index) => (
+
+                    <Link
+                      href={item.href}
+                      aria-label={item.label}
+                      key={index}
+                      className={cn(
+                        buttonVariants({ variant: "ghost", size: "icon" }),
+                        "rounded-full text-lg w-fit",
+                        pathname === item.href ? "font-bold" : ""
+                      )}
+                    >
+                      {item.label}
+                    </Link>
+            ))}
+            <Separator orientation="vertical" className="h-full" />
+      </div>
+    </div>
+  );
+}
+
+/*function DockDemo() {
+  const pathname = usePathname();
+  return (
     <div className="fixed bottom-8 z-50 left-0 right-0">
       <div className="flex flex-col items-center justify-center">
         <TooltipProvider>
@@ -188,6 +214,6 @@ function DockDemo() {
       </div>
     </div>
   );
-}
+}*/
 
 export default DockDemo;

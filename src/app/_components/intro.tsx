@@ -136,36 +136,16 @@ export function Intro() {
   }, []);
 
   return (
-    <section className="flex flex-col justify-center">
-      <div className="max-w-5xl mx-auto w-full pt-4 pb-12 md:pb-20 md:pt-8">
+    <section className="flex w-full flex-col justify-center">
+      <div className="px-4 xl:px-96 w-full pt-4 pb-12 md:pb-20 md:pt-8">
         <div className="flex flex-col md:grid-cols-1 gap-2 md:gap-4">          
-            <div className="p-2 px-6 bg-orange-400 font-semibold rounded-lg">
-              <p>/home/salim_boujaddi</p>
-            </div>  
-                <div className="mb-4">
-                  <pre style={{fontFamily: 'monospace', fontSize: '1rem', lineHeight: '1.1'}}>
-{`
-                        _
-                       | \\
-                       | |
-                       | |
-  |\\                   | |
- /, ~\\                / /
-X     \`-.....-------./ /
- ~-. ~  ~              |
-    \\             /    |
-     \\  /_     ___\\   /
-     | /\\ ~~~~~   \\ |
-     | | \\        || |
-     | |\\ \\       || )
-    (_/ (_/      ((_/ 
-`}
-                  </pre>
-                </div>
+            <img src="/snapshot1.png" alt="Salim" className="w-48 h-48 rounded-full" />
             <h2 className="text-3xl md:text-2xl right-24 bottom-24 font-light tracking-tight text-black leading-tight">
-              <span className="font-bold">Hi, I'm <span className="text-orange-400">Salim</span>, a Software Engineer</span>
-              <br /><span className="">&</span> <span className="font-base">8 Hackathons</span> Prize Winner
+              <span className="font-bold">Hi, I'm <span className="">Salim</span>, a Software Engineer</span> 🏴‍☠️
             </h2>
+            <p className="text-lg max-w-5xl">
+              8 Hackathons Prize Winner. Skipped all lectures, still got my Math BSc at 19. I love to build projects. Student @ Sorbonne University. AI/Web3/Math. President of a university Chess Club.
+            </p>
 
             <div className="flex flex-wrap gap-4">
               <Link 

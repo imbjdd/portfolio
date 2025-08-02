@@ -7,18 +7,20 @@ import { Snapshots } from "@/app/_components/snapshots";
 import { getAllPosts } from "@/lib/api";
 import Header from "@/app/_components/header";
 
+import "./globals.css";
+
 export default function Index() {
   const allPosts = getAllPosts();
   const morePosts = allPosts;
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white w-screen overflow-x-hidden min-w-96">
       <Container>
-        <Header />
-        <Intro />
       </Container>
+      <Header />
+
+      <Intro />
             
-      <Container>
         <Awards />
         <div className="flex flex-col gap-4">
           {morePosts.length > 0 && (
@@ -27,7 +29,6 @@ export default function Index() {
         </div>
         {/* <Resume /> */}
         <Snapshots />
-      </Container>
     </main>
   );
 }

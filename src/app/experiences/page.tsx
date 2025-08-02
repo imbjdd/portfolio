@@ -5,9 +5,8 @@ import Image from "next/image";
 export default function Articles() {
   return (
     <main className="min-h-screen">
-      <Container>
-      <div className="max-w-5xl mx-auto w-full pt-4 pb-12 md:pb-20 md:pt-8">
-        <Header />
+      <Header />
+      <div className="px-4 xl:px-96 w-full pt-4 pb-12 md:pb-20 md:pt-8">
         <div className="py-8 md:py-16 flex flex-col gap-4">          
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
             Experiences
@@ -44,7 +43,6 @@ export default function Articles() {
           </section>
         </div>
       </div>
-      </Container>
     </main>
   );
 } 

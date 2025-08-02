@@ -1,88 +1,25 @@
 'use client'
 
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "motion/react"
 import { Pointer } from "@/app/components/magicui/pointer";
+import { projectsData } from "@/lib/projects";
 
-const awardsData = [
-  {
-    image: '/coc.jpg',
-    imageAlt: 'ETHGlobal Agents award',
-    title: 'Gaia and Collab.Land - Most Viral Agent & Flow Best AI Agents for Consumers 3rd place',
-    description: 'ETHGlobal Agents — $3,500',
-    delay: 0.2,
-    fullWidth: false,
-    link: 'https://github.com/juSt-jeLLy/Clash-of-Clout'
-  },
-  {
-    image: '/ddd.jpg',
-    imageAlt: 'ETHGlobal Brussels award',
-    title: 'The Graph - Best Use of Subgraph 2nd place',
-    description: 'ETHGlobal Brussels — $1,500',
-    delay: 0.4,
-    fullWidth: false,
-    link: 'https://github.com/imbjdd/ethglobal-brussels'
-  },
-  {
-    image: '/amsterdam.jpeg',
-    imageAlt: 'Legal Frontier Hackathon award',
-    title: 'Legal Frontier Hackathon - 2nd place',
-    description: 'Amsterdam — 2025',
-    delay: 0.2,
-    fullWidth: false,
-    link: 'https://github.com/imbjdd/alphavibe-compliance'
-  },
-  {
-    image: '/www.png',
-    imageAlt: 'World Wild Web Hackathon award',
-    title: 'World Wild Web - 3rd place',
-    description: 'Paris — 2025',
-    delay: 0.2,
-    fullWidth: false,
-    link: 'https://github.com/imbjdd/www-winner'
-  },
-  {
-    image: '/db3.png',
-    imageAlt: 'ETHShangai award',
-    title: 'DB3 - Building a decentralized application with DB3',
-    description: 'ETHShangai — $300',
-    delay: 0.2,
-    fullWidth: false,
-    link: 'https://github.com/orgs/SoveiLive/repositories'
-  },
-  {
-    image: '/privlend.jpg',
-    imageAlt: 'ETHGlobal Trifecta award',
-    title: 'Privlend',
-    description: 'ETHGlobal Trifecta',
-    delay: 0.4,
-    fullWidth: false,
-    link: 'https://github.com/imbjdd/privlend-front'
-  },
-  {
-    image: '/climate.png',
-    imageAlt: 'ETHPrague 2024',
-    title: 'Climate Compass',
-    description: 'ETHPrague 2024',
-    delay: 0.2,
-    fullWidth: false,
-    link: 'https://github.com/orgs/Climate-Compass/repositories'
-  },
-  {
-    image: '/clickandcollect.png',
-    imageAlt: 'Hackathon Campus Fund x Albert School x 42',
-    title: 'Click and Collect',
-    description: 'Hackathon Campus Fund x Albert School x 42',
-    delay: 0.4,
-    fullWidth: false,
-    link: 'https://github.com/imbjdd/marketplace'
-  }
-];
+// Using projectsData from lib/projects.ts instead of local awardsData
+
+const bgColors = [
+  '-rose-200',
+  '-blue-200',
+  '-green-200',
+  '-yellow-200',
+  '-purple-200',
+]
 
 export function Awards() {
   return (
     <section className="pb-24 md:pb-32" id="content">
-      <div className="max-w-5xl mx-auto">
+      <div className="px-4 xl:px-96 w-full">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -92,33 +29,66 @@ export function Awards() {
           Hackathon Projects
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          {awardsData.map((award, index) => (
+        <div className="grid grid-cols-1 gap-16">
+          {projectsData.map((project, index) => (
             <motion.div 
               key={index}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: award.delay }}
-              className={`group ${award.fullWidth ? 'md:col-span-2 md:max-w-xl' : ''}`}
+              transition={{ duration: 0.5, delay: project.delay }}
+              className={`group ${project.fullWidth ? 'md:col-span-2 md:max-w-xl' : ''}`}
             >
-              <a href={award.link} target="_blank" rel="noopener noreferrer" className="block">
-                <div className="overflow-hidden mb-6 aspect-[16/9]">
-                  <Image 
-                    className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700 transform hover:scale-105 object-cover" 
-                    src={award.image} 
-                    width={900} 
-                    height={506} 
-                    alt={award.imageAlt}
-                  />
-                  <Pointer className="fill-orange-400" />
+              
+                <div key={index} className="flex flex-col xl:flex-row  gap-8">
+                  <div className="flex flex-col justify-between gap-2">
+                    <div className="flex flex-col gap-2">
+                    <Link href={`/projects/${project.slug}`} className="block">
+                      <div>
+                        <h3 className="text-lg font-bold min-w-96 max-w-96 py-2 rounded-md text-black transition-colors duration-300 mb-2 hover:text-orange-600">
+                          {project.title}
+                        </h3>
+                        <p className="text-md font-light text-gray-700 group-hover:text-black transition-colors duration-300">
+                          {project.description}
+                        </p>
+                      </div>
+                    </Link>
+                    <div className="flex gap-2 mt-2">
+                      <Link 
+                        href={`/projects/${project.slug}`}
+                        className="text-blue-600 hover:text-blue-800 font-medium"
+                      >
+                        Read More
+                      </Link>
+                      <p> / </p>
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-800 font-medium"
+                      >
+                        GitHub
+                      </a>
+                    </div>
+                    </div>
+                    <div className="flex gap-2">
+                      {project.tags.map((tag: string, index2: number) => (
+                        <span key={index2} className={`bg-rose-200 p-2`}>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={`overflow-hidden grow aspect-[16/9] p-4 2xl:p-12 bg-blue-200 rounded-xl`}>
+                    <Image 
+                      className="w-full rounded-xl h-full grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-101 object-cover" 
+                      src={project.image} 
+                      width={900} 
+                      height={506} 
+                      alt={project.imageAlt}
+                    />
+                    <Pointer className={`fill${bgColors[index % bgColors.length]}`} />
+                  </div>
                 </div>
-                <h3 className="text-xl font-light py-2 rounded-md text-black transition-colors duration-300 mb-2 hover:text-orange-600">
-                  {award.title}
-                </h3>
-                <p className="text-md font-light text-gray-700 group-hover:text-black transition-colors duration-300">
-                  {award.description}
-                </p>
-              </a>
             </motion.div>
           ))}
         </div>
