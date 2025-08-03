@@ -60,25 +60,27 @@ export function Awards() {
                         Read More
                       </Link>
                       <p> / </p>
-                      <a 
-                        href={project.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-gray-800 font-medium"
-                      >
-                        GitHub
-                      </a>
+                      {project.link ? (
+                        <a 
+                          href={project.link as string}
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-gray-600 hover:text-gray-800 font-medium"
+                        >
+                          GitHub
+                        </a>
+                      ) : null}
                     </div>
                     </div>
                     <div className="flex gap-2">
                       {project.tags.map((tag: string, index2: number) => (
-                        <span key={index2} className={`bg-rose-200 p-2`}>
+                        <span key={index2} className={`p-2`} style={{ backgroundColor: project.color || '#f0f0f0' }}>
                           {tag}
                         </span>
                       ))}
                     </div>
                   </div>
-                  <div className={`overflow-hidden grow aspect-[16/9] p-4 2xl:p-12 bg-blue-200 rounded-xl`}>
+                  <div className={`overflow-hidden grow aspect-[16/9] p-4 2xl:p-12 rounded-xl`} style={{ backgroundColor: project.color || '#f0f0f0' }}>
                     <Image 
                       className="w-full rounded-xl h-full grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-101 object-cover" 
                       src={project.image} 

@@ -19,4 +19,5 @@ export interface Project {
   team?: string[];
   duration?: string;
   role?: string;
+  color?: string;
 } 

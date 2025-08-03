@@ -11,7 +11,7 @@ export const projectsData: Project[] = [
     fullWidth: false,
     link: 'https://github.com/juSt-jeLLy/Clash-of-Clout',
     tags: ['AI', 'Web3', 'Hackathon'],
-    longDescription: 'Clash of Clout is an innovative AI-powered social media platform that leverages blockchain technology to create a decentralized content ecosystem. The platform uses AI agents to curate and promote high-quality content while rewarding creators through a unique tokenomics system.',
+    longDescription: 'Clash-of-Clout is an AI-powered meme battle platform that merges AI-generated content with GAIA nodes and a Twitter-based Knowledge Base, crypto rewards, and social media engagement tracking into one gamified ecosystem. Users create, compete, and earn by generating memes based on real-time crypto trends, staking tokens, and winning rewards through transparent Flow Blockchain smart contracts.',
     technologies: ['React', 'Solidity', 'AI/ML', 'IPFS', 'Ethereum'],
     features: [
       'AI-powered content curation',
@@ -32,11 +32,12 @@ export const projectsData: Project[] = [
       'User experience design for Web3 applications',
       'Tokenomics design principles'
     ],
-    demoLink: 'https://clash-of-clout.vercel.app',
+    demoLink: 'https://ethglobal.com/showcase/clash-of-clout-qedfz',
     githubLink: 'https://github.com/juSt-jeLLy/Clash-of-Clout',
     team: ['Lead Developer', 'AI Engineer', 'Blockchain Developer'],
     duration: '48 hours',
-    role: 'Full-stack Developer & AI Integration'
+    role: 'Full-stack Developer & AI Integration',
+    color: '#bfdbfe' // blue-200
   },
   {
     slug: 'ethglobal-brussels',
@@ -73,7 +74,8 @@ export const projectsData: Project[] = [
     githubLink: 'https://github.com/imbjdd/ethglobal-brussels',
     team: ['Backend Developer', 'Frontend Developer', 'Data Engineer'],
     duration: '48 hours',
-    role: 'Subgraph Developer & API Design'
+    role: 'Subgraph Developer & API Design',
+    color: '#fbcfe8' // pink-200
   },
   {
     slug: 'alphavibe-compliance',
@@ -110,7 +112,8 @@ export const projectsData: Project[] = [
     githubLink: 'https://github.com/imbjdd/alphavibe-compliance',
     team: ['Legal Tech Developer', 'Compliance Specialist', 'Frontend Developer'],
     duration: '48 hours',
-    role: 'Smart Contract Developer & Compliance Integration'
+    role: 'Smart Contract Developer & Compliance Integration',
+    color: '#fef08a' // yellow-200
   },
   {
     slug: 'www-winner',
@@ -147,7 +150,8 @@ export const projectsData: Project[] = [
     githubLink: 'https://github.com/imbjdd/www-winner',
     team: ['P2P Developer', 'Frontend Developer', 'Blockchain Developer'],
     duration: '48 hours',
-    role: 'P2P Infrastructure Developer'
+    role: 'P2P Infrastructure Developer',
+    color: '#a7f3d0' // green-200
   },
   {
     slug: 'db3-decentralized',
@@ -184,7 +188,8 @@ export const projectsData: Project[] = [
     githubLink: 'https://github.com/orgs/SoveiLive/repositories',
     team: ['Database Engineer', 'Blockchain Developer', 'Frontend Developer'],
     duration: '48 hours',
-    role: 'Database Architect & Smart Contract Developer'
+    role: 'Database Architect & Smart Contract Developer',
+    color: '#fca5a5' // red-200
   },
   {
     slug: 'privlend',
@@ -221,7 +226,8 @@ export const projectsData: Project[] = [
     githubLink: 'https://github.com/imbjdd/privlend-front',
     team: ['Cryptography Engineer', 'Smart Contract Developer', 'Frontend Developer'],
     duration: '48 hours',
-    role: 'Zero-Knowledge Proof Developer & Smart Contract Architect'
+    role: 'Zero-Knowledge Proof Developer & Smart Contract Architect',
+    color: '#c7d2fe' // indigo-200
   },
   {
     slug: 'climate-compass',
@@ -258,7 +264,8 @@ export const projectsData: Project[] = [
     githubLink: 'https://github.com/orgs/Climate-Compass/repositories',
     team: ['Environmental Data Scientist', 'Smart Contract Developer', 'Frontend Developer'],
     duration: '48 hours',
-    role: 'Smart Contract Developer & Impact Measurement'
+    role: 'Smart Contract Developer & Impact Measurement',
+    color: '#fcd34d' // amber-200
   },
   {
     slug: 'click-and-collect',
@@ -295,7 +302,8 @@ export const projectsData: Project[] = [
     githubLink: 'https://github.com/imbjdd/marketplace',
     team: ['Smart Contract Developer', 'Frontend Developer', 'UX Designer'],
     duration: '48 hours',
-    role: 'Smart Contract Developer & Marketplace Architect'
+    role: 'Smart Contract Developer & Marketplace Architect',
+    color: '#f9a8d4' // rose-200
   }
 ];
 
