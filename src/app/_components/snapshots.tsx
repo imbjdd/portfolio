@@ -13,7 +13,7 @@ const SNAPSHOTS = [
 
 export function Snapshots() {
   return (
-    <section className="px-4 md:px-96 w-full pt-4 pb-12 md:pb-20 md:pt-8 overflow-hidden">
+    <section className="px-4 xl:px-96 w-full pt-4 pb-12 md:pb-20 md:pt-8 overflow-hidden">
       <h2 className="text-2xl md:text-2xl font-semibold text-black mb-16 tracking-tight"
         >
           Snapshots
