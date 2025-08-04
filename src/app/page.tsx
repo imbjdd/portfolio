@@ -7,6 +7,8 @@ import { Snapshots } from "@/app/_components/snapshots";
 import { getAllPosts } from "@/lib/api";
 import Header from "@/app/_components/header";
 
+import GithubContributionGraph from "@/app/_components/github-contribution-graph";
+
 import "./globals.css";
 
 export default function Index() {
@@ -18,17 +20,16 @@ export default function Index() {
       <Container>
       </Container>
       <Header />
-
       <Intro />
-            
-        <Awards />
-        <div className="flex flex-col gap-4">
-          {morePosts.length > 0 && (
-            <MoreStories posts={morePosts} />
-          )}
-        </div>
+      <Awards />
+      <GithubContributionGraph />
+      <div className="flex flex-col gap-4">
+        {morePosts.length > 0 && (
+          <MoreStories posts={morePosts} />
+        )}
+      </div>
         {/* <Resume /> */}
-        <Snapshots />
+      <Snapshots />
     </main>
   );
 }

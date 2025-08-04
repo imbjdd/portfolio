@@ -20,4 +20,5 @@ export interface Project {
   duration?: string;
   role?: string;
   color?: string;
+  show?: boolean;
 } 

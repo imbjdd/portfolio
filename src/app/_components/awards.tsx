@@ -30,7 +30,7 @@ export function Awards() {
         </motion.h2>
 
         <div className="grid grid-cols-1 gap-16">
-          {projectsData.map((project, index) => (
+          {projectsData.map((project, index) => project.show && (
             <motion.div 
               key={index}
               initial={{ opacity: 0 }}

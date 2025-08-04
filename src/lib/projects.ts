@@ -37,7 +37,8 @@ export const projectsData: Project[] = [
     team: ['Lead Developer', 'AI Engineer', 'Blockchain Developer'],
     duration: '48 hours',
     role: 'Full-stack Developer & AI Integration',
-    color: '#bfdbfe' // blue-200
+    color: '#bfdbfe', // blue-200
+    show: true
   },
   {
     slug: 'ethglobal-brussels',
@@ -75,7 +76,8 @@ export const projectsData: Project[] = [
     team: ['Backend Developer', 'Frontend Developer', 'Data Engineer'],
     duration: '48 hours',
     role: 'Subgraph Developer & API Design',
-    color: '#fbcfe8' // pink-200
+    color: '#c7d2fe', // pink-200
+    show: true
   },
   {
     slug: 'alphavibe-compliance',
@@ -113,7 +115,8 @@ export const projectsData: Project[] = [
     team: ['Legal Tech Developer', 'Compliance Specialist', 'Frontend Developer'],
     duration: '48 hours',
     role: 'Smart Contract Developer & Compliance Integration',
-    color: '#fef08a' // yellow-200
+    color: '#ddd6fe', // yellow-200
+    show: true
   },
   {
     slug: 'www-winner',
@@ -151,7 +154,8 @@ export const projectsData: Project[] = [
     team: ['P2P Developer', 'Frontend Developer', 'Blockchain Developer'],
     duration: '48 hours',
     role: 'P2P Infrastructure Developer',
-    color: '#a7f3d0' // green-200
+    color: '#a7f3d0', // green-200
+    show: false
   },
   {
     slug: 'db3-decentralized',
@@ -189,7 +193,8 @@ export const projectsData: Project[] = [
     team: ['Database Engineer', 'Blockchain Developer', 'Frontend Developer'],
     duration: '48 hours',
     role: 'Database Architect & Smart Contract Developer',
-    color: '#fca5a5' // red-200
+    color: '#fca5a5', // red-200
+    show: false
   },
   {
     slug: 'privlend',
@@ -227,7 +232,8 @@ export const projectsData: Project[] = [
     team: ['Cryptography Engineer', 'Smart Contract Developer', 'Frontend Developer'],
     duration: '48 hours',
     role: 'Zero-Knowledge Proof Developer & Smart Contract Architect',
-    color: '#c7d2fe' // indigo-200
+    color: '#c7d2fe', // indigo-200
+    show: false
   },
   {
     slug: 'climate-compass',
@@ -265,7 +271,8 @@ export const projectsData: Project[] = [
     team: ['Environmental Data Scientist', 'Smart Contract Developer', 'Frontend Developer'],
     duration: '48 hours',
     role: 'Smart Contract Developer & Impact Measurement',
-    color: '#fcd34d' // amber-200
+    color: '#fcd34d', // amber-200
+    show: false
   },
   {
     slug: 'click-and-collect',
@@ -303,7 +310,8 @@ export const projectsData: Project[] = [
     team: ['Smart Contract Developer', 'Frontend Developer', 'UX Designer'],
     duration: '48 hours',
     role: 'Smart Contract Developer & Marketplace Architect',
-    color: '#f9a8d4' // rose-200
+    color: '#f9a8d4', // rose-200
+    show: false
   }
 ];
 
