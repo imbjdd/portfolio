@@ -18,10 +18,7 @@ const GithubContributionGraph = async () => {
   for (let i = 0; i < contributions.length; i += 7) {
     weeks.push(contributions.slice(i, i + 7));
   }
-  // Responsive cell size: smaller on mobile, larger on desktop
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
-  const cellSize = isMobile ? 16 : 24;
-  const cellRadius = isMobile ? 4 : 7;
+  // TailwindCSS classes for responsive cell size
 
   return (
     <section className="pb-12 md:pb-32" id="content">
@@ -29,19 +26,14 @@ const GithubContributionGraph = async () => {
         <h2 className="text-2xl md:text-2xl font-semibold text-black mb-16 tracking-tight">
           My Github Contributions
         </h2>
-        <div className="flex gap-0.5 sm:gap-1.5 w-full justify-center overflow-y-hidden bg-white rounded-2xl sm:rounded-3xl overflow-x-auto py-3 sm:py-6">
+        <div className="flex gap-0.5 sm:gap-1.5 w-full justify-center overflow-y-hidden bg-white overflow-x-auto">
           {weeks.map((week, wi) => (
             <div key={wi} className="flex flex-col gap-0.5 sm:gap-1.5">
               {week.map((day, di) => (
                 <div
                   key={di}
-                  style={{
-                    width: cellSize,
-                    height: cellSize,
-                    background: getColor(day.count),
-                    borderRadius: cellRadius,
-                  }}
-                  className="transition-transform duration-200 ease-out cursor-pointer hover:scale-110 sm:hover:scale-125 focus:scale-110 sm:focus:scale-125"
+                  style={{ background: getColor(day.count) }}
+                  className="transition-transform duration-200 ease-out cursor-pointer hover:scale-110 sm:hover:scale-125 focus:scale-110 sm:focus:scale-125 w-3 h-3 sm:w-5 sm:h-5 rounded-[3px] sm:rounded-sm"
                   title={`${day.date}: ${day.count} commit${day.count > 1 ? "s" : ""}`}
                 ></div>
               ))}
