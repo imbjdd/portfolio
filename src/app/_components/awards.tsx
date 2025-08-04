@@ -25,6 +25,7 @@ export function Awards() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-2xl md:text-2xl font-semibold text-black mb-16 tracking-tight"
+          viewport={{ once: true }}
         >
           Hackathon Projects
         </motion.h2>
@@ -37,6 +38,7 @@ export function Awards() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: project.delay }}
               className={`group ${project.fullWidth ? 'md:col-span-2 md:max-w-xl' : ''}`}
+              viewport={{ once: true }}
             >
               
                 <div key={index} className="flex flex-col xl:flex-row  gap-8">
