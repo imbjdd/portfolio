@@ -6,6 +6,7 @@ import { MoreStories } from "@/app/_components/more-stories";
 import { Snapshots } from "@/app/_components/snapshots";
 import { getAllPosts } from "@/lib/api";
 import Header from "@/app/_components/header";
+import { Hackathons } from "./_components/hackathons";
 
 import GithubContributionGraph from "@/app/_components/github-contribution-graph";
 
@@ -29,6 +30,7 @@ export default function Index() {
         )}
       </div>
         {/* <Resume /> */}
+      <Hackathons />
       <Snapshots />
     </main>
   );
