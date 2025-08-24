@@ -115,6 +115,8 @@ const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/articles", icon: PencilIcon, label: "Blog" },
     { href: "/experiences", icon: Brain, label: "Experiences" },
+    { href: "https://github.com/imbjdd", icon: FolderOpen, label: "GitHub" },
+    { href: "https://www.linkedin.com/in/salim-boujaddi/", icon: CalendarIcon, label: "LinkedIn" },
   ],
   contact: {
     social: {
@@ -136,7 +138,7 @@ function DockDemo() {
   const pathname = usePathname();
   return (
     <div className="px-4 xl:px-96 w-full">
-      <div className="flex gap-12 py-4">
+      <div className="flex flex-col md:flex-row md:gap-12 py-4">
             {DATA.navbar.map((item, index) => (
 
                     <Link
