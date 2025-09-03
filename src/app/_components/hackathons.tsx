@@ -19,7 +19,7 @@ export function Hackathons() {
         </h2>
         <p>I did participate in <i>some</i> hackathons for fun because I didn't have anything better to do. (Section not finished :D, I will try to finish it before thursday)</p>
         <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-fit">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 3xl:grid-cols-4 gap-4 w-fit">
                 {hackathons.map((hackathon) => (
                 <div key={hackathon.id} className="flex gap-4 hover:bg-blue-50 rounded-lg p-4">
                     <div className="w-48 h-32 flex-shrink-0 overflow-hidden rounded-md flex items-center justify-center">
@@ -30,10 +30,9 @@ export function Hackathons() {
                             style={{ objectFit: "contain", background: "" }}
                         />
                     </div>
-                    <div className="flex flex-col gap-1">
+                    <div className="flex flex-col gap-1 justify-center">
                         <h3 className="text-lg font-bold">{hackathon.name}</h3>
                         <p className="text-sm text-gray-600">{new Date(hackathon.date).toLocaleDateString()}</p>
-                        <p className="text-md">{hackathon.description}</p>
                     </div>
                 </div>
                 ))}
