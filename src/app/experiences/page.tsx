@@ -38,6 +38,9 @@ export default function Articles() {
             <p>We built a consumer app delivering hedge-fund returns by optimizing yields with MCP-powered agentic workflows.</p>
             <Image src="/cannes.jpg" alt="ETHGlobal Cannes" width={800} height={450} className="rounded-lg w-full" />
 
+            <h3 className="font-bold mt-8">Entrepreneur First AI Security</h3>
+            <p>I got first place building a C-to-Rust automatic transpiler.</p>
+
             <h3 className="font-bold mt-8">Internship at LinkPact</h3>
             <p>Currently I&apos;m working on an agentic system to transpile legacy codes. For this project, I&apos;m also fine-tuning a LLM using <a className="text-orange-400" href="https://arxiv.org/abs/2106.09685">LoRA</a>.</p>
           </section>
