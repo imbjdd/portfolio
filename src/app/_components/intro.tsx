@@ -144,7 +144,7 @@ export function Intro() {
               <span className="font-bold">Hi, I'm <span className="">Salim</span>, a Software Engineer</span> 🏴‍☠️
             </h2>
             <p className="text-lg max-w-5xl">
-              8 Hackathons Prize Winner. Skipped all lectures, still got my Math BSc at 19. I love to build projects. Student @ Sorbonne University. AI/Web3/Math. President of a university Chess Club.
+              9 Hackathons Prize Winner. Skipped all lectures, still got my Math BSc at 19. I love to build projects. Student @ Sorbonne University. AI/Web3/Math. President of a university Chess Club.
             </p>
 
             <div className="flex flex-wrap gap-4">
