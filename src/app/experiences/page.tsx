@@ -7,9 +7,9 @@ export default function Articles() {
     <main className="min-h-screen">
       <Header />
       <div className="px-4 xl:px-96 w-full pt-4 pb-12 md:pb-20 md:pt-8">
-        <div className="py-8 md:py-16 flex flex-col gap-4">          
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
-            Experiences
+        <div className="pb-8 flex flex-col gap-4">          
+          <h1 className="text-3xl font-bold md:text-2xl right-24 bottom-24 tracking-tight text-black leading-tight">
+          Experiences
           </h1>
           <p>I used a lot of different technologies.</p>
           <ul className="list-disc pl-6">
